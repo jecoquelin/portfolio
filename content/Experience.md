@@ -1,6 +1,6 @@
 ## kiloWattheure50
 - *Alternant Développeur Web* | Août 2023 - Aujourd'hui
-- ![logo512](../assets/logo512.png)
+- ![logo512](/portfolio/assets/logo512.png)
 - Tags: kiloWattheure50
 - Badges:
   - PHP [blue]
@@ -15,7 +15,7 @@
 
 ## Exail
 - *Stagiaire assistant Développeur Logiciel* | Avril 2023 - Juin 2023
-- ![logo-Exail](../assets/logo-Exail.png)
+- ![logo-Exail](/portfolio/assets/logo-Exail.png)
 - Tags: Exail
 - Badges:
   - React [blue]
@@ -29,7 +29,7 @@
 
 ## Super U
 - *Conseiller de vente multimédia* | Juillet 2022 - Août 2022
-- ![logo512](../assets/logo512.png)
+- ![logo512](/portfolio/assets/logo512.png)
 - Tags: Super U
 - Badges:
 - List Items:

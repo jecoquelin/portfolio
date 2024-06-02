@@ -5,14 +5,18 @@ import {
   Container,
   Box,
   HStack,
+  Button,
+  Link,
   Heading,
   Center,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import ProfileArray from "./ProfileArray";
+import "./../style/contact.css";
 
 export default function Contact({ color }) {
   const profile = ProfileArray();
+  console.log("profile : ", profile)
   const linkedin = () => {
     window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
   };
@@ -22,6 +26,7 @@ export default function Contact({ color }) {
   const email = () => {
     window.open(`mailto:${profile.email}`, "_blank", "noreferrer,noopener");
   };
+
   return (
     <>
       <Container maxW={"3xl"} id="contact">
@@ -41,10 +46,27 @@ export default function Contact({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-            <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
-            <Text color={"gray.600"} fontSize={"xl"} px={4}>
-              {profile.contact}
-            </Text>
+            <Heading fontSize={"3xl"}>Restons en contact</Heading>
+            <Link
+              href={profile.cv} // Replace with the path to your PDF file
+              download="Jérémy_Coquelin_CV.pdf"        // Name of the downloaded file
+              _hover={{
+                textDecoration: "none",
+              }}
+            >
+              <Button
+                colorScheme={color}
+                bg={`${color}.400`}
+                rounded={"full"}
+                px={6}
+                _hover={{
+                  bg: `${color}.500`,
+                }}
+              >
+
+                Télécharger mon cv
+              </Button>
+            </Link>
             <Text color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
               {profile.email}
             </Text>

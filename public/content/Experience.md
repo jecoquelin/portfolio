@@ -1,29 +1,38 @@
-## Company 1
-- *Role* | Jan'23 - Feb'23
+## kiloWattheure50
+- *Alternant Développeur Web* | Août 2023 - Aujourd'hui
 - ![logo512](../assets/logo512.png)
-- Tags: Category 1
+- Tags: kiloWattheure50
 - Badges:
-  - Badge [blue]
+  - PHP [blue]
+  - JavaScript [blue]
+  - React [blue]
+  - Node.JS [blue]
+  - Sécurité [blue]
 - List Items:
-  - Point 1
-  - Point 2
+  - Autonomie
+  - Persévérance
+  - Communication
 
-## Company 2
-- *Role* | Feb'23 - Mar'23
-- ![logo512](../assets/logo512.png)
-- Tags: Category 2
+## Exail
+- *Stagiaire assistant Développeur Logiciel* | Avril 2023 - Juin 2023
+- ![logo-Exail](../assets/logo-Exail.png)
+- Tags: Exail
 - Badges:
-  - Badge [blue]
+  - React [blue]
+  - Node.Js [blue]
+  - Express [blue]
+  - Ionic [blue]
+  - Postman [blue]
 - List Items:
-  - Point 1
-  - Point 2
+  - Communication
+  - Automonie
 
-## Company 3
-- *Role* | Mar'23 - Apr'23
+## Super U
+- *Conseiller de vente multimédia* | Juillet 2022 - Août 2022
 - ![logo512](../assets/logo512.png)
-- Tags: Category 3
+- Tags: Super U
 - Badges:
-  - Badge [blue]
 - List Items:
-  - Point 1
-  - Point 2
+  - Communication
+  - Automonie
+  - Rigueur

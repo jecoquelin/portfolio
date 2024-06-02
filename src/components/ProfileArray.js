@@ -8,16 +8,21 @@ const parseProfile = (mdContent) => {
     headerDesc: "",
     about: "",
     contact: "",
+    cv: "", 
     linkedin: "",
     github: "",
     email: "",
     logo: "",
   };
 
-  const lines = mdContent.split("\n");
+
+  // const html = marked(mdContent, { breaks: true }); // <--- Add breaks: true option
+  let lines = mdContent.split('\n');
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
+
+    
 
     if (line.startsWith("## ")) {
       const section = line.substr(3).trim();
@@ -32,8 +37,8 @@ const parseProfile = (mdContent) => {
           profile.about = lines[++i].trim();
           break;
         case "Contact":
-          profile.contact = lines[++i].trim();
-          const contactLinks = ["LinkedIn", "GitHub", "Email"];
+          // profile.contact = lines[++i].trim();
+          const contactLinks = ["Cv", "LinkedIn", "GitHub", "Email"];
           for (const link of contactLinks) {
             const linkLine = lines[++i].substr(2).trim();
             if (linkLine.startsWith(link)) {
@@ -62,6 +67,7 @@ const ProfileArray = () => {
     headerDesc: "",
     about: "",
     contact: "",
+    cv: "",
     linkedin: "",
     github: "",
     email: "",
@@ -77,6 +83,7 @@ const ProfileArray = () => {
         return response.text();
       })
       .then((mdContent) => {
+
         setProfile(parseProfile(mdContent));
       })
       .catch((error) => {

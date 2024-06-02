@@ -4,6 +4,7 @@ import {
   Text,
   Container,
   Box,
+  useColorModeValue,
   HStack,
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
@@ -24,11 +25,11 @@ export default function About({ color }) {
                 <Text color={`${color}.400`} fontWeight={800}>
                   01
                 </Text>
-                <Text fontWeight={800}>About</Text>
+                <Text fontWeight={800} whiteSpace="nowrap">A propos</Text>
               </HStack>
               <Divider orientation="horizontal" />
             </Stack>
-            <Text color={"gray.600"} fontSize={"xl"} px={4}>
+            <Text color={useColorModeValue("gray.800", "gray.400")} fontSize={"xl"} px={4}>
               {profile.about}
             </Text>
           </Stack>
